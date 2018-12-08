@@ -1,0 +1,161 @@
+     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   10  ANGL    39[GEN39       345.00]1     -8.184         -12.91           1.1450
+    2  ANGL    31[GEN31       34.500]1     -1.029         -11.07           1.1600
+    3  ANGL    32[GEN32       21.000]1     -1.473         -10.42           1.1750
+    5  ANGL    34[GEN34       15.500]1     -9.854         -9.092           1.2050
+    7  ANGL    36[GEN36       12.500]1      3.490         -8.790           0.0130
+    1  ANGL    30[GEN30       34.500]1     -8.704          8.704           0.0130
+    4  ANGL    33[GEN33       21.000]1     -4.766         -8.632           0.5000
+    6  ANGL    35[GEN35       15.500]1     -5.866         -8.344           0.4630
+    8  ANGL    37[GEN37       12.500]1     -4.762          7.607           1.7900
+    9  ANGL    38[GEN38       34.500]1      0.000          0.000           0.0130     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   21  POWR    30[GEN30       34.500]1      2.240         -2.240           0.5000
+   28  POWR    37[GEN37       12.500]1      5.400        -0.9956           0.5000
+   30  POWR    39[GEN39       345.00]1      7.500         0.7009           0.5000
+   29  POWR    38[GEN38       34.500]1      8.300        -0.6594           1.2200
+   22  POWR    31[GEN31       34.500]1      5.729        -0.2076           1.5800
+   23  POWR    32[GEN32       21.000]1      6.500        -0.1610           1.5800
+   26  POWR    35[GEN35       15.500]1      6.500         0.1245           0.5000
+   24  POWR    33[GEN33       21.000]1      6.320         0.1068           0.5000
+   27  POWR    36[GEN36       12.500]1      5.600         0.1042           2.8550
+   25  POWR    34[GEN34       15.500]1      5.080         0.7333E-01       1.7300     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   31  VARS    30[GEN30       34.500]1      1.532         -1.532           0.5000
+   40  VARS    39[GEN39       345.00]1      3.681         0.9177           0.6350
+   34  VARS    33[GEN33       21.000]1      2.827         0.5523           4.9998
+   39  VARS    38[GEN38       34.500]1      2.082         0.4853           1.2350
+   33  VARS    32[GEN32       21.000]1      4.467         0.4561           4.9098
+   37  VARS    36[GEN36       12.500]1      1.312         0.4170           1.8200
+   35  VARS    34[GEN34       15.500]1      2.475         0.4064           0.0130
+   36  VARS    35[GEN35       15.500]1      3.741         0.3523           0.9050
+   38  VARS    37[GEN37       12.500]1      1.919        -0.3424           0.9950
+   32  VARS    31[GEN31       34.500]1      4.298         0.2677           0.5000     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   11  ETRM    30[GEN30       34.500]1     0.9948        -0.9948           0.5000
+   20  ETRM    39[GEN39       345.00]1      1.020        -0.3108E-01       1.8950
+   12  ETRM    31[GEN31       34.500]1     0.7900        -0.2296E-01       1.5500
+   13  ETRM    32[GEN32       21.000]1     0.9575        -0.2225E-01       1.5200
+   16  ETRM    35[GEN35       15.500]1      1.029        -0.1236E-01       1.0700
+   14  ETRM    33[GEN33       21.000]1     0.9972        -0.1112E-01       4.9998
+   18  ETRM    37[GEN37       12.500]1      1.028         0.1062E-01       1.0100
+   17  ETRM    36[GEN36       12.500]1      1.023        -0.8920E-02       0.8300
+   19  ETRM    38[GEN38       34.500]1      1.026        -0.8794E-02       1.8650
+   15  ETRM    34[GEN34       15.500]1      1.012        -0.7065E-02       2.5100     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 39 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   77  FREQ     37 [GEN37       12.500]     0.000         0.1670E-02       0.7250
+   65  FREQ     25 [LOAD25      345.00]     0.000         0.1249E-02       0.7400
+   78  FREQ     38 [GEN38       34.500]     0.000         0.9498E-03       0.9200
+   79  FREQ     39 [GEN39       345.00]     0.000        -0.9018E-03       0.7250
+   69  FREQ     29 [LOAD29      345.00]     0.000         0.8233E-03       0.8900
+   68  FREQ     28 [LOAD28      345.00]     0.000         0.7722E-03       0.8600
+   49  FREQ      9 [BUS9        345.00]     0.000        -0.7353E-03       1.2200
+   41  FREQ      1 [BUS1        345.00]     0.000        -0.7156E-03       1.2200
+   66  FREQ     26 [LOAD26      345.00]     0.000         0.6839E-03       0.8000
+   71  FREQ     31 [GEN31       34.500]     0.000         0.5847E-03       1.3250
+   72  FREQ     32 [GEN32       21.000]     0.000         0.5470E-03       1.3850
+   46  FREQ      6 [BUS6        345.00]     0.000         0.4530E-03       1.3850
+   50  FREQ     10 [BUS10       345.00]     0.000         0.4518E-03       1.3850
+   51  FREQ     11 [BUS11       345.00]     0.000         0.4516E-03       1.3850
+   47  FREQ      7 [LOAD7       345.00]     0.000         0.4460E-03       1.3850
+   48  FREQ      8 [LOAD8       345.00]     0.000        -0.4447E-03       1.3850
+   52  FREQ     12 [LOAD12      138.00]     0.000         0.4416E-03       1.3850
+   45  FREQ      5 [BUS5        345.00]     0.000         0.4413E-03       1.3850
+   53  FREQ     13 [BUS13       345.00]     0.000         0.4321E-03       1.3850
+   67  FREQ     27 [LOAD27      345.00]     0.000         0.3913E-03       0.8000
+   44  FREQ      4 [LOAD4       345.00]     0.000         0.3841E-03       1.3850
+   54  FREQ     14 [BUS14       345.00]     0.000         0.3835E-03       1.3850
+   42  FREQ      2 [BUS2        345.00]     0.000        -0.3822E-03       1.2200
+   76  FREQ     36 [GEN36       12.500]     0.000         0.3042E-03       1.3850
+   43  FREQ      3 [LOAD3       345.00]     0.000         0.2943E-03       1.3850
+   74  FREQ     34 [GEN34       15.500]     0.000         0.2866E-03       1.3850
+   55  FREQ     15 [LOAD15      345.00]     0.000         0.2803E-03       1.3850
+   60  FREQ     20 [LOAD20      138.00]     0.000         0.2732E-03       2.0900
+   73  FREQ     33 [GEN33       21.000]     0.000         0.2654E-03       1.3850
+   63  FREQ     23 [LOAD23      345.00]     0.000         0.2617E-03       1.3850
+   59  FREQ     19 [BUS19       345.00]     0.000         0.2602E-03       1.3850
+   75  FREQ     35 [GEN35       15.500]     0.000        -0.2575E-03       1.3850
+   62  FREQ     22 [BUS22       345.00]     0.000         0.2518E-03       1.3850
+   61  FREQ     21 [LOAD21      345.00]     0.000         0.2441E-03       1.3850
+   64  FREQ     24 [LOAD24      345.00]     0.000         0.2404E-03       1.3850
+   56  FREQ     16 [LOAD16      345.00]     0.000         0.2366E-03       1.3850
+   58  FREQ     18 [LOAD18      345.00]     0.000         0.2189E-03       1.3850
+   57  FREQ     17 [BUS17       345.00]     0.000         0.1732E-03       1.3850
+   70  FREQ     30 [GEN30       34.500]     0.000         0.1702E-06       0.2980     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  22:10
+IEEE 39 BUS SYSTEM
+VULNERABILITY ASSESSMENT
+
+ LIST OF 39 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      5.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+  109  VOLT     30 [GEN30       34.500]    0.9948        -0.9948           0.5000
+   81  VOLT      2 [BUS2        345.00]    0.9920        -0.8232E-01       1.0250
+   82  VOLT      3 [LOAD3       345.00]    0.9388        -0.5663E-01       0.0130
+   80  VOLT      1 [BUS1        345.00]     1.021        -0.5102E-01       1.0100
+   97  VOLT     18 [LOAD18      345.00]    0.9503        -0.4570E-01       1.0400
+   83  VOLT      4 [LOAD4       345.00]    0.9118        -0.4103E-01       0.9800
+   96  VOLT     17 [BUS17       345.00]    0.9601        -0.3741E-01       1.0400
+   84  VOLT      5 [BUS5        345.00]    0.8965        -0.3603E-01       1.5200
+   93  VOLT     14 [BUS14       345.00]    0.9272        -0.3590E-01       0.9800
+   85  VOLT      6 [BUS6        345.00]    0.8976        -0.3512E-01       0.0130
+   86  VOLT      7 [LOAD7       345.00]    0.8404        -0.3511E-01       1.5200
+   87  VOLT      8 [LOAD8       345.00]    0.8585        -0.3503E-01       1.5200
+  106  VOLT     27 [LOAD27      345.00]    0.9758        -0.3391E-01       0.0130
+   91  VOLT     12 [LOAD12      138.00]    0.9244        -0.3379E-01       0.0130
+   90  VOLT     11 [BUS11       345.00]    0.9225        -0.3368E-01       1.5200
+   92  VOLT     13 [BUS13       345.00]    0.9324        -0.3361E-01       0.9500
+   89  VOLT     10 [BUS10       345.00]    0.9360        -0.3286E-01       0.0130
+   88  VOLT      9 [BUS9        345.00]    0.9637        -0.3211E-01       0.0130
+   94  VOLT     15 [LOAD15      345.00]    0.9389        -0.3126E-01       1.0100
+  118  VOLT     39 [GEN39       345.00]     1.020        -0.3108E-01       1.8950
+   95  VOLT     16 [LOAD16      345.00]    0.9603        -0.2885E-01       1.0250
+  103  VOLT     24 [LOAD24      345.00]    0.9692        -0.2732E-01       0.0130
+  105  VOLT     26 [LOAD26      345.00]     1.002        -0.2547E-01       1.0700
+  100  VOLT     21 [LOAD21      345.00]    0.9729        -0.2374E-01       1.0250
+  110  VOLT     31 [GEN31       34.500]    0.7900        -0.2296E-01       1.5500
+  111  VOLT     32 [GEN32       21.000]    0.9575        -0.2225E-01       0.0130
+  107  VOLT     28 [LOAD28      345.00]     1.016        -0.1872E-01       0.0130
+  101  VOLT     22 [BUS22       345.00]     1.006        -0.1813E-01       1.0100
+  102  VOLT     23 [LOAD23      345.00]    0.9970        -0.1767E-01       0.0130
+   98  VOLT     19 [BUS19       345.00]     1.024        -0.1718E-01       0.0130
+  104  VOLT     25 [LOAD25      345.00]     1.013         0.1679E-01       0.5000
+  108  VOLT     29 [LOAD29      345.00]     1.021        -0.1610E-01       1.1750
+  114  VOLT     35 [GEN35       15.500]     1.029        -0.1236E-01       1.0700
+   99  VOLT     20 [LOAD20      138.00]    0.9765        -0.1217E-01       0.9350
+  112  VOLT     33 [GEN33       21.000]    0.9972        -0.1112E-01       4.9998
+  116  VOLT     37 [GEN37       12.500]     1.028         0.1062E-01       0.5150
+  115  VOLT     36 [GEN36       12.500]     1.023        -0.8920E-02       0.8300
+  117  VOLT     38 [GEN38       34.500]     1.026        -0.8794E-02       1.8650
+  113  VOLT     34 [GEN34       15.500]     1.012        -0.7065E-02       2.5100

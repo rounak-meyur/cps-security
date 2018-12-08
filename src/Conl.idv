@@ -1,0 +1,11 @@
+MENU,OFF  /Conl.idv - Convert Loads for Dynamic Studies
+CONL, AREA
+1              / TXU
+50 50          / % constant I, % constant G for real power
+0  50          / % constant I, % constant B for reactive power
+1              / 1=ok
+0              / END of areas entry
+1              / 1= REST OF LOADS
+50 50          / % constant I, % constant G for real power
+0  50          / % constant I, % constant B for reactive power
+1              / 1=OK, end of data entry

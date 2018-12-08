@@ -1,0 +1,129 @@
+\section{Technical Approach}\label{sec:technical}
+The proposed security assessment of the power system consists of two parts: (\textit{i})vulnerability assessment of the SCADA system associated with the grid and (\textit{ii}) evaluating vulnerabilities in the physical power system. The net impact of a cyber attack on the SCADA system is therefore evaluated as the combined impact on the cyber system and the physical power system. Each of the system model is discussed in this section.
+\subsection{Cyber system model}\label{sec:cyber}
+The cyber system model consists of the evaluation of probability of successfully exploiting the vulnerabilities which has been detailed in Section~\ref{sec:prelim} and the calculation of time to compromise a vulnerability. For a known vulnerability, there can be two possibilities: (\textit{i}) intruder has the required code to exploit it and (\textit{ii}) the intruder does not have the code to exploit the known vulnerability. The mean time to compromise a known vulnerability is evaluated in~\cite{mcqueen} as
+\begin{equation}
+T(v_i)=\dfrac{10}{\mathsf{CVSS}(v_i)}\bigg(1+4.8e^{-k}\bigg)\quad\textrm{days}
+\end{equation}
+For a zero day vulnerability, the two possible cases are possible: (\textit{i}) intruder knows about the existence of the vulnerability and (\textit{ii}) the intruder does not know about any vulnerability. The mean time to compromise a zero day vulnerability~\cite{mcqueen} is given by
+\begin{equation}
+T(v_i)=\bigg(32+\dfrac{10}{\mathsf{CVSS}(v_i)}\bigg)+\bigg(33+4.8\dfrac{10}{\mathsf{CVSS}(v_i)}\bigg)e^{-k}\quad\textrm{days}
+\end{equation}
+where $k$ represents the capability of the intruder in identifying a possible exploit to a vulnerability. In this paper, four possible skill levels are considered for the intruder with $k=10,2,1,0.01$. These intruders are identified as expert, professional, intermediate and amateur level adversaries respectively.   
+ 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{fig-simpleattacktree.png}
+	\caption{Simplified attack tree targeting control center application server.}
+	\label{fig:simpleattacktree}
+\end{figure}
+Fig.~\ref{fig:simpleattacktree} shows a simplified Bayesian attack tree for the attack path in Fig.~\ref{fig:example} where the time to compromise each vulnerability is shown beside each node and the probability of successfully reaching target condition $c_i$ from vulnerability $v_j$ denoted by $\mathbb{P}(v_j\wedge c_i)$ is shown beside each edge. The mean time to compromise (MTTC) and reach a target access level $c_i$ from $n$ possible prior access levels $c_j=1,2,\cdots,n$ is calculated. Let there be $m_j$ vulnerabilities to reach from access level $c_j$ to $c_i$ given by $v_k,j=1,2,\cdots,m_j$.
+\begin{equation}
+\mathsf{MTTC}(c_i)=\dfrac{1}{\mathbb{P}(c_i)}\bigg[\sum_{j=1}^{n}\mathsf{MTTC}(c_j)+\sum_{k=1}^{m_j}{\mathbb{P}(v_k\wedge c_i)\cdot T(v_k)}\bigg]
+\end{equation}
+The mean time to compromise a vulnerability with exploit code available is $1$ day as evaluated in~\cite{mcqueen}. Therefore, the attack efficiency ($\zeta$) for the target $c$ can be calculated as 
+\begin{equation}
+\zeta(c)=\dfrac{1}{\mathsf{MTTC}(c)}
+\end{equation}
+
+In this paper, three substation LAN models and a SCADA model for control center are considered and the attack tree for the same are generated. In each substation model, the intruder aims to attack the human machine interface (HMI) to gain administrator access and thereafter send control signals to trip breakers in the physical power system. In the control center model, the goal of intruder is to access the application server.
+
+\noindent\textbf{Substation LAN Model A}\ 
+In this model, the HMI, workstations and the IEDs at a substation are connected to a common LAN network as shown in Fig.~\ref{fig:model-A}. A single firewall with an ethernet switch controls the passage of information to and from the network. In this case, the intruder can exploit a vulnerability in the firewall to directly access the HMI which is connected to the LAN network.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{A-model.png}
+	\caption{Cyber intrusion scenario in Substation LAN Model A.}
+	\label{fig:model-A}
+\end{figure}
+
+The attack graph is developed based on the above steps and is shown in Fig.~\ref{fig:graph-A}. First, the intruder can exploit vulnerabilities to remotely access the HMI. Two most popularly used protocols for remote access are the file transfer protocol (FTP) and the secure shell (SSH). In this paper, vulnerabilities in these protocols have been considered for remote access of host systems. It is assumed that the FTP vulnerability is a known type and SSH vulnerability is a zero day type. Once the intruder accesses the HMI, a buffer overflow vulnerability (bof) can be exploited to gain administrator privilege on the HMI system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{A-graph.png}
+	\caption{Attack tree representation for Substation LAN Model A.}
+	\label{fig:graph-A}
+\end{figure}
+
+\noindent\textbf{Substation LAN Model B}\ 
+In this model, the substation LAN is divided into two virtual LANs (VLANs). The substation VLAN connects the workstations, HMI and other control units and the bay VLAN connects the IEDs in the switchyard. These two VLANs communicate with a shared server which alternates between the networks through a pair of ethernet switches as shown in Fig.~\ref{fig:model-B}. Such an architecture increases the level of security of the SCADA system. An intruder can exploit a vulnerability in the firewall to access the shared server. Thereafter, the HMI can be accessed by exploiting a vulnerability from the shared server. The intruder can also directly access the HMI by exploiting the vulnerabilities as in case of model A.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{B-model.png}
+	\caption{Cyber intrusion scenario in Substation LAN Model B.}
+	\label{fig:model-B}
+\end{figure}
+
+Fig.~\ref{fig:graph-B} shows the attack graph based on the above architecture. The intruder can exploit vulnerabilities to gain access of the shared server. In this case a cross scripting vulnerability (XSS) is considered which allows remote attackers to arbitrarily inject web script to access the shared server~\cite{ftp}. The remote access of the HMI can be done from the shared server as well as from the intruder system through the two popularly used protocols FTP and SSH. It is assumed that the XSS and FTP vulnerabilities are known type and SSH vulnerability is zero day type. Once the intruder accesses the HMI, a buffer overflow vulnerability (bof) can be exploited to gain administrator privilege on the HMI system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{B-graph.png}
+	\caption{Attack tree representation for Substation LAN Model B.}
+	\label{fig:graph-B}
+\end{figure}
+
+\noindent\textbf{Substation LAN Model C}\ 
+Fig.~\ref{fig:model-C} shows the architecture of this LAN model. In this case, a local SCADA system connects all components in the substation LAN. The HMI cannot be accessed remotely and all communication has to pass through the local SCADA system. An intruder can exploit a vulnerability in the firewall to access the local SCADA system. Thereafter, the HMI can be accessed by exploiting a vulnerability from the local SCADA. Finally, vulnerabilities within the HMI can be exploited to gain administrator privilege on the system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{C-model.png}
+	\caption{Cyber intrusion scenario in Substation LAN Model C.}
+	\label{fig:model-C}
+\end{figure}
+
+The attack graph for this LAN architecture is shown in Fig.~\ref{fig:graph-C}. The intruder can exploit a HTTP vulnerability in the SCADA firewall to gain access of the local SCADA system. This vulnerability can cause denial of service (DoS) in the servers as discussed in~\cite{http}. The remote access of the HMI can be done from the SCADA through FTP and SSH. It is assumed that the HTTP and FTP vulnerabilities are known type and SSH vulnerability is zero day type. Once the intruder accesses the HMI, similar to the previous cases, a buffer overflow vulnerability (bof) can be exploited to gain administrator privilege on the HMI system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{C-graph.png}
+	\caption{Attack tree representation for Substation LAN Model C.}
+	\label{fig:graph-C}
+\end{figure}
+
+\noindent\textbf{Control Center SCADA Model}\ 
+Fig.~\ref{fig:model-CC} shows the SCADA system for a control center. In this case, an intruder can exploit a vulnerability in the firewall to access the database server. Thereafter, the application server can be accessed by exploiting a vulnerability from the database server. Finally, vulnerabilities within the application server can be exploited to gain administrator privilege on the system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{CC-model.png}
+	\caption{Cyber intrusion scenario in control center SCADA system.}
+	\label{fig:model-CC}
+\end{figure}
+
+The attack graph for this control center architecture is shown in Fig.~\ref{fig:graph-CC}. The intruder can exploit two vulnerabilities (denial of service (DoS) and Exec Code Overflow (exe))~\cite{ssh} in the SCADA firewall to gain access of the database server. The remote access of the HMI can be done from the SCADA through FTP and SSH. It is assumed that the HTTP and FTP vulnerabilities are known type and SSH vulnerability is zero day type. Once the intruder accesses the HMI, similar to the previous cases, a buffer overflow vulnerability (bof) can be exploited to gain administrator privilege on the HMI system.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.4]{CC-graph.png}
+	\caption{Attack tree representation for control center SCADA system.}
+	\label{fig:graph-CC}
+\end{figure}
+\subsection{Physical system model}\label{sec:physical}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.25]{fig-ieee39.png}
+	\caption{IEEE 39 bus system with 27 substation.}
+	\label{fig:ieee39}
+\end{figure}
+For modeling the physical system, the individual substations are required to be identified along with the associated IEDs. Thereafter, the possible combination of the IEDs are considered and contingencies are simulated based on these combinations. For example in Fig.~\ref{fig:ieee39} the substation with buses $2$ and $30$ has $6$ IEDs controlling the circuit breakers for generator G39, transformer HV and LV sides, and three transmission lines. There can be 63 combinations of these IEDs and the list of contingencies are shown in Fig.~\ref{fig:keysub2}.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.2]{fig-key-sub2.png}
+	\caption{List of contingencies when HMI of substation 2 is compromised.}
+	\label{fig:keysub2}
+\end{figure}
+
+For each of these contingencies, a dynamic simulation is carried out for $10$ seconds. Therefore, the impact when an HMI is compromised and target IED set $\mathsf{S}$ is attacked can be evaluated as
+\begin{equation}
+I(\mathsf{S})=\beta_f\dfrac{\Delta f}{\Delta f_{\mathsf{rated}}}+\beta_v\frac{1}{N}\sum_{i=1}^{N}\dfrac{\Delta V_i}{\Delta V_{\mathsf{rated}}}
+\end{equation} 
+where $\Delta f$ and $\Delta V$ represent the maximum frequency and voltage deviation respectively and they are normalized to the rated deviations of $1\%$ and $5\%$ respectively. $\beta_f$ and $\beta_v$ are the suitable weighting factor and $N$ is the total number of buses in the system. Fig.~\ref{fig:sub2} shows the impact of $63$ possible contingencies when IEDs of substation $2$ are targeted. The impact has been calculated with $\beta_f=\beta_v=0.1$.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.35]{fig-sub2.png}
+	\caption{Impact of attacks on the IEDs of substation $2$.}
+	\label{fig:sub2}
+\end{figure}
+
+Let $\mathcal{T}_c=\{\mathsf{S_1},\mathsf{S_2},\cdots,\mathsf{S_M}\}$ be the list of possible contingencies which can be created when the target vulnerability (HMI at substation $2$) is compromised. The resulting risk ($R$) associated with the cyber attack on the target vulnerability $c$ is given by
+\begin{equation}
+R(c)=\zeta(c)\cdot\dfrac{1}{M}\sum_{i=1}^{M}\mathsf{S_i}
+\end{equation}
+The mean impact of all possible contingencies from a compromised HMI is considered as the measure of physical impact of the cyber attack. From Fig.~\ref{fig:sub2} the physical impact of compromising the HMI at substation $2$ is $0.138$. This is the mean impact of all the $63$ possible contingencies.

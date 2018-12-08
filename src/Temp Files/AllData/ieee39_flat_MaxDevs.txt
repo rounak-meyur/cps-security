@@ -1,0 +1,161 @@
+     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   12  ANGL    30[GEN30       34.500]1     -8.704         0.2126E-01       2.9980
+    6  ANGLE SPREAD                         13.34         0.9155E-03       2.6530
+   13  ANGL    31[GEN31       34.500]1     -1.029         0.8106E-03       1.8580
+   14  ANGL    32[GEN32       21.000]1     -1.473         0.7839E-03       2.0080
+   19  ANGL    37[GEN37       12.500]1     -4.762         0.7267E-03       1.8580
+   16  ANGL    34[GEN34       15.500]1     -9.854        -0.6275E-03       0.0130
+   17  ANGL    35[GEN35       15.500]1     -5.866         0.3796E-03       0.9130
+   18  ANGL    36[GEN36       12.500]1      3.490         0.3719E-03       0.7630
+   21  ANGL    39[GEN39       345.00]1     -8.184         0.3529E-03       0.7630
+   15  ANGL    33[GEN33       21.000]1     -4.766        -0.2861E-03       0.5380     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   41  POWR    39[GEN39       345.00]1      7.500        -0.1183E-03       2.3080
+   32  POWR    30[GEN30       34.500]1      2.240        -0.1142E-03       0.1630
+   40  POWR    38[GEN38       34.500]1      8.300        -0.8392E-04       0.8380
+   35  POWR    33[GEN33       21.000]1      6.320        -0.8011E-04       0.9430
+   37  POWR    35[GEN35       15.500]1      6.500        -0.6533E-04       0.9430
+   39  POWR    37[GEN37       12.500]1      5.400        -0.5913E-04       2.9980
+   38  POWR    36[GEN36       12.500]1      5.600        -0.5865E-04       1.3180
+   36  POWR    34[GEN34       15.500]1      5.080        -0.5770E-04       1.3180
+   34  POWR    32[GEN32       21.000]1      6.500        -0.4530E-04       2.1580
+   33  POWR    31[GEN31       34.500]1      5.729        -0.4148E-04       1.1380     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   42  VARS    30[GEN30       34.500]1      1.532        -0.2209E-02       2.2480
+   51  VARS    39[GEN39       345.00]1      3.681         0.5910E-03       1.7980
+   49  VARS    37[GEN37       12.500]1      1.919         0.5314E-03       2.5630
+   50  VARS    38[GEN38       34.500]1      2.082         0.3076E-03       2.7580
+   45  VARS    33[GEN33       21.000]1      2.827         0.1986E-03       1.8580
+   44  VARS    32[GEN32       21.000]1      4.467         0.1850E-03       2.6080
+   47  VARS    35[GEN35       15.500]1      3.741         0.1738E-03       2.9980
+   46  VARS    34[GEN34       15.500]1      2.475         0.1693E-03       2.5480
+   48  VARS    36[GEN36       12.500]1      1.312         0.1351E-03       2.5630
+   43  VARS    31[GEN31       34.500]1      4.298         0.1264E-03       2.5780     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 10 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   22  ETRM    30[GEN30       34.500]1     0.9948        -0.7278E-04       2.5930
+   29  ETRM    37[GEN37       12.500]1      1.028        -0.1562E-04       2.5480
+   31  ETRM    39[GEN39       345.00]1      1.020        -0.8941E-05       1.8580
+   24  ETRM    32[GEN32       21.000]1     0.9575        -0.6974E-05       2.0980
+   23  ETRM    31[GEN31       34.500]1     0.7900        -0.6795E-05       2.5480
+   30  ETRM    38[GEN38       34.500]1      1.026        -0.4292E-05       2.5780
+   27  ETRM    35[GEN35       15.500]1      1.029        -0.3815E-05       0.0130
+   25  ETRM    33[GEN33       21.000]1     0.9972        -0.3338E-05       0.0130
+   28  ETRM    36[GEN36       12.500]1      1.023        -0.2861E-05       0.0130
+   26  ETRM    34[GEN34       15.500]1      1.012        -0.2742E-05       0.0130     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 39 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+   82  FREQ     31 [GEN31       34.500]     0.000         0.4542E-06       2.8780
+   83  FREQ     32 [GEN32       21.000]     0.000         0.4506E-06       1.9480
+   88  FREQ     37 [GEN37       12.500]     0.000         0.4491E-06       2.8330
+   63  FREQ     12 [LOAD12      138.00]     0.000         0.4276E-06       2.5780
+   58  FREQ      7 [LOAD7       345.00]     0.000         0.4271E-06       2.5780
+   90  FREQ     39 [GEN39       345.00]     0.000         0.4256E-06       2.4130
+   61  FREQ     10 [BUS10       345.00]     0.000         0.4254E-06       2.5780
+   76  FREQ     25 [LOAD25      345.00]     0.000         0.4253E-06       2.8330
+   56  FREQ      5 [BUS5        345.00]     0.000         0.4251E-06       2.5780
+   62  FREQ     11 [BUS11       345.00]     0.000         0.4233E-06       2.5780
+   89  FREQ     38 [GEN38       34.500]     0.000         0.4232E-06       2.7880
+   81  FREQ     30 [GEN30       34.500]     0.000         0.4207E-06       2.0680
+   57  FREQ      6 [BUS6        345.00]     0.000         0.4198E-06       2.6830
+   64  FREQ     13 [BUS13       345.00]     0.000         0.4192E-06       2.5630
+   54  FREQ      3 [LOAD3       345.00]     0.000         0.4176E-06       2.6080
+   59  FREQ      8 [LOAD8       345.00]     0.000         0.4158E-06       2.5780
+   78  FREQ     27 [LOAD27      345.00]     0.000         0.4157E-06       2.6230
+   60  FREQ      9 [BUS9        345.00]     0.000         0.4151E-06       2.4430
+   79  FREQ     28 [LOAD28      345.00]     0.000         0.4147E-06       2.9830
+   53  FREQ      2 [BUS2        345.00]     0.000         0.4137E-06       2.4430
+   65  FREQ     14 [BUS14       345.00]     0.000         0.4128E-06       2.6080
+   77  FREQ     26 [LOAD26      345.00]     0.000         0.4105E-06       2.5030
+   86  FREQ     35 [GEN35       15.500]     0.000         0.4099E-06       2.0380
+   55  FREQ      4 [LOAD4       345.00]     0.000         0.4087E-06       2.6380
+   85  FREQ     34 [GEN34       15.500]     0.000         0.4080E-06       2.8780
+   68  FREQ     17 [BUS17       345.00]     0.000         0.4076E-06       2.1880
+   69  FREQ     18 [LOAD18      345.00]     0.000         0.4075E-06       2.5030
+   80  FREQ     29 [LOAD29      345.00]     0.000         0.4064E-06       2.2180
+   66  FREQ     15 [LOAD15      345.00]     0.000         0.4062E-06       2.6380
+   75  FREQ     24 [LOAD24      345.00]     0.000         0.4041E-06       2.4430
+   87  FREQ     36 [GEN36       12.500]     0.000         0.4038E-06       2.7580
+   52  FREQ      1 [BUS1        345.00]     0.000         0.4033E-06       2.4130
+   73  FREQ     22 [BUS22       345.00]     0.000         0.4024E-06       1.9930
+   72  FREQ     21 [LOAD21      345.00]     0.000         0.4021E-06       1.9930
+   67  FREQ     16 [LOAD16      345.00]     0.000         0.4009E-06       2.7430
+   84  FREQ     33 [GEN33       21.000]     0.000         0.3976E-06       2.9980
+   71  FREQ     20 [LOAD20      138.00]     0.000         0.3973E-06       2.8630
+   70  FREQ     19 [BUS19       345.00]     0.000         0.3939E-06       2.1880
+   74  FREQ     23 [LOAD23      345.00]     0.000         0.3933E-06       2.0380     PTI INTERACTIVE PLOTTING PROGRAM--PSSPLT      WED, OCT 17 2018  12:22
+NEW ENGLAND TEST SYSTEM, 39 BUSES, 9 GENERATORS
+UPDATED BY JOSE CONTO
+
+ LIST OF 39 CHANNELS WITH MAXIMUM DEVIATION FROM  INITIAL TIME=    -0.0020
+            FROM TIME      0.0000 TO TIME      3.0000
+
+CHANEL IDENTIFIER                        INITIAL VALUE    DEVIATION         TIME (SECONDS)
+  120  VOLT     30 [GEN30       34.500]    0.9948        -0.7278E-04       2.5930
+   92  VOLT      2 [BUS2        345.00]    0.9920        -0.3606E-04       2.5480
+  115  VOLT     25 [LOAD25      345.00]     1.013        -0.2825E-04       0.0130
+   93  VOLT      3 [LOAD3       345.00]    0.9388        -0.2408E-04       2.5930
+   91  VOLT      1 [BUS1        345.00]     1.021        -0.1895E-04       2.5930
+  108  VOLT     18 [LOAD18      345.00]    0.9503        -0.1854E-04       2.5780
+  116  VOLT     26 [LOAD26      345.00]     1.002        -0.1740E-04       2.5480
+  117  VOLT     27 [LOAD27      345.00]    0.9758        -0.1639E-04       2.5480
+   94  VOLT      4 [LOAD4       345.00]    0.9118        -0.1568E-04       2.5780
+  127  VOLT     37 [GEN37       12.500]     1.028        -0.1562E-04       2.5480
+  107  VOLT     17 [BUS17       345.00]    0.9601        -0.1520E-04       0.0130
+  104  VOLT     14 [BUS14       345.00]    0.9272        -0.1323E-04       0.0130
+   95  VOLT      5 [BUS5        345.00]    0.8965        -0.1270E-04       2.5480
+   96  VOLT      6 [BUS6        345.00]    0.8976        -0.1222E-04       0.0130
+   97  VOLT      7 [LOAD7       345.00]    0.8404        -0.1216E-04       2.5480
+   98  VOLT      8 [LOAD8       345.00]    0.8585        -0.1210E-04       0.0130
+  103  VOLT     13 [BUS13       345.00]    0.9324        -0.1210E-04       0.0130
+  102  VOLT     12 [LOAD12      138.00]    0.9244        -0.1198E-04       2.5780
+  101  VOLT     11 [BUS11       345.00]    0.9225        -0.1180E-04       2.5930
+  105  VOLT     15 [LOAD15      345.00]    0.9389        -0.1162E-04       2.5930
+  100  VOLT     10 [BUS10       345.00]    0.9360        -0.1150E-04       2.5780
+  106  VOLT     16 [LOAD16      345.00]    0.9603        -0.1085E-04       0.0130
+  118  VOLT     28 [LOAD28      345.00]     1.016        -0.1073E-04       0.0130
+  114  VOLT     24 [LOAD24      345.00]    0.9692        -0.1025E-04       0.0130
+   99  VOLT      9 [BUS9        345.00]    0.9637        -0.9894E-05       1.8580
+  129  VOLT     39 [GEN39       345.00]     1.020        -0.8941E-05       1.8580
+  111  VOLT     21 [LOAD21      345.00]    0.9729        -0.8762E-05       2.5930
+  119  VOLT     29 [LOAD29      345.00]     1.021        -0.8702E-05       0.0130
+  122  VOLT     32 [GEN32       21.000]    0.9575        -0.6974E-05       0.0130
+  121  VOLT     31 [GEN31       34.500]    0.7900        -0.6795E-05       0.0130
+  112  VOLT     22 [BUS22       345.00]     1.006        -0.6437E-05       0.0130
+  113  VOLT     23 [LOAD23      345.00]    0.9970        -0.6258E-05       0.0130
+  109  VOLT     19 [BUS19       345.00]     1.024        -0.5841E-05       2.5930
+  128  VOLT     38 [GEN38       34.500]     1.026        -0.4292E-05       2.5780
+  110  VOLT     20 [LOAD20      138.00]    0.9765        -0.4113E-05       2.5930
+  125  VOLT     35 [GEN35       15.500]     1.029        -0.3815E-05       0.0130
+  123  VOLT     33 [GEN33       21.000]    0.9972        -0.3338E-05       0.0130
+  126  VOLT     36 [GEN36       12.500]     1.023        -0.2861E-05       0.0130
+  124  VOLT     34 [GEN34       15.500]     1.012        -0.2742E-05       0.0130

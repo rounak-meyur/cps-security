@@ -1,0 +1,19 @@
+MENU,OFF      /* FORCE MENU TO CORRECT STATUS
+CHNF
+"Plot Files/ieee39sub1-attackIED1.out"
+RANG
+1
+ 
+SCAN
+2 0 1
+"Temp Files/ieee39-devn-sub1-attackIED1.txt"
+4
+1 2500
+FREQ
+39
+1 2500
+VOLT
+39
+ 
+ 
+@END

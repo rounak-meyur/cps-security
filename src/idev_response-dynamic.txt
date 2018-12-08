@@ -1,0 +1,26 @@
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+ BSYS:
+
+ Messages for process batcmd
+ Data type error occurred while trying to read count argument NUMAREA for BSYS   (004783)
+
+ ACTIVITY? :
+
+ ACTIVITY? :
+
+ ACTIVITY? :
