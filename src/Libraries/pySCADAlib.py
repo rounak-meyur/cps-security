@@ -52,7 +52,7 @@ def ComputeEdgeExploit(G,CVSS,vul_type,k):
         elif vul_type[v[2]] == 'Z':
             Time_Compromise[v]=32+(10/CVSS[v[2]])+(33+(4.8*10/CVSS[v[2]]))*np.exp(-k)
         else:
-            print "Wrong code of vulnerability!!!... Exiting program"
+            print ("Wrong code of vulnerability!!!... Exiting program")
             sys.exit(0)
     nx.set_edge_attributes(G,Edge_Exp,'exploit')
     nx.set_edge_attributes(G,Time_Compromise,'compromise')

@@ -11,7 +11,7 @@ time to compromise a HMI at every substation.
 import sys,os
 import matplotlib.pyplot as plt
 import numpy as np
-import cPickle as pkl
+# import cPickle as pkl
 
 workPath = os.getcwd()
 pathBin = workPath + "\\Binary Output\\"
@@ -20,7 +20,7 @@ pathFig = workPath + "\\Figures\\"
 sys.path.append(pathLib)
 
 import pySCADAlib
-reload(pySCADAlib)
+# reload(pySCADAlib)
 
 #CVSS = {'ssh':10,'ftp':10,'htp':10,'bof':10,'xss':10}
 CVSS = {'ssh':0.8,'ftp':6.4,'htp':9.3,'bof':6.8,'xss':4.5,'exe':10.0,'dos':5.0}
@@ -42,14 +42,14 @@ for choice in choice_list:
         elif choice == 2: MTTC.append(pySCADAlib.ModelC(CVSS,type_vul,k))
         elif choice == 3: MTTC.append(pySCADAlib.ModelCC(CVSS,type_vul,k))
         else:
-            print "Wrong Model Choice!!! Exiting program"
+            # print "Wrong Model Choice!!! Exiting program"
             sys.exit(0)
     MTTC_all.append(MTTC)
 
 
-pkl.dump(MTTC_all,open(pathBin+"model-compare-pkl-file.p",'wb'))
+# pkl.dump(MTTC_all,open(pathBin+"model-compare-pkl-file.p",'wb'))
 
-f = plt.figure(figsize=(10,6))
+f = plt.figure(figsize=(15,8))
 plt.xticks(np.linspace(1,27,num=27))
 plt.xlabel('Substations',fontsize=12.0)
 plt.ylabel('Mean time to compromise (days)',fontsize=12.0)
@@ -58,5 +58,5 @@ plt.plot(subID,MTTC_all[0],marker='o',color='r',linestyle='-',markersize=5.0,lab
 plt.plot(subID,MTTC_all[1],marker='P',color='b',linestyle='-',markersize=5.0,label='Model B')
 plt.plot(subID,MTTC_all[2],marker='*',color='g',linestyle='-',markersize=5.0,label='Model C')
 plt.plot(subID,MTTC_all[3],marker='*',color='y',linestyle='-',markersize=5.0,label='Control Center')
-plt.legend(ncol=1,loc='best')
+plt.legend(ncol=1,loc='best',prop={'size': 13})
 f.savefig(pathFig+figfile, bbox_inches='tight')

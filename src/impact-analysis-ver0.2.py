@@ -6,7 +6,7 @@ Author: Rounak Meyur
 """
 
 import os, sys
-import cPickle as pkl
+import pickle as pkl
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -20,7 +20,7 @@ pathFig = workPath + "\\Figures\\"
 sys.path.append(pathLib)
 
 import pySCADAlib
-reload(pySCADAlib)
+# reload(pySCADAlib)
 
 subID = range(1,28)
 
@@ -40,7 +40,7 @@ for i in range(27):
     elif LAN_model[i] == 1: MTTC = pySCADAlib.ModelB(CVSS,type_vul,k)
     elif LAN_model[i] == 2: MTTC = pySCADAlib.ModelC(CVSS,type_vul,k)
     else:
-        print "Wrong Model Choice!!! Exiting program"
+        print ("Wrong Model Choice!!! Exiting program")
         sys.exit(0)
     Attack1.append(1.0/MTTC)
 
@@ -53,7 +53,7 @@ Net_Imp1 = [Attack1[i]*Max_Impact[i] for i in range(27)]
 Net_Imp2 = [Attack2[i]*Max_Impact[i] for i in range(27)]
     
 figfile = "Net-Impact1.png"
-f = plt.figure(figsize=(10,6))
+f = plt.figure(figsize=(13,6))
 plt.xticks(np.linspace(1,27,num=27))
 plt.xlabel('Substations',fontsize=12.0)
 plt.ylabel('Impact of the attack',fontsize=15.0)
@@ -65,7 +65,7 @@ plt.legend()
 f.savefig(pathFig+figfile, bbox_inches='tight')
 
 figfile = "Net-Impact2.png"
-f = plt.figure(figsize=(10,6))
+f = plt.figure(figsize=(13,6))
 plt.xticks(np.linspace(1,27,num=27))
 plt.xlabel('Substations',fontsize=12.0)
 plt.ylabel('Impact of the attack',fontsize=15.0)

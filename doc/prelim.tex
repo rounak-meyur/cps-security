@@ -5,27 +5,12 @@ An attack graph consists of two types of nodes: exploit to vulnerabilities and c
 
 For example, a cyber intrusion scenario is considered for a control center SCADA system, where an adversary aims to gain unauthorized access to control assets in the power system. The cyber intruder has to access the application server for this purpose which is dedicated to send control commands to open/close circuit breakers in the power system. In order to do so, the adversary needs to gain access of the historian server through a firewall and thereafter reach the application server through a different firewall as shown in Fig.~\ref{fig:example}.
 
-Let there be two possible exploits to the vulnerabilities in the first firewall denoted by $\langle\textrm{Ser}1,0,1\rangle$ and $\langle\textrm{Ser}2,0,1\rangle$ as shown in Fig.~\ref{sfig-attacktree}. The first one is assumed to be a zero day exploit and the second one is considered as a known exploitation. A zero day exploit to a vulnerability is one which may not be publicly known but identified by an intruder. In order to exploit either of the vulnerabilities, the intruder needs the privilege \emph{user}(\emph{0}) (which denotes him being present) and is required to be connected to the historian server through $\langle$\emph{0},\emph{1}$\rangle$. Additionally, the vulnerabilities require the services \emph{Ser1(1)} and \emph{Ser2(1)} respectively to be available for them to be exploited. Once the vulnerability is successfully exploited, the intruder gains the user privilege \emph{user}(\emph{1}) of the historian server. This output of previously occurred exploit can be used as a precondition of the successive exploits. In the second firewall, we consider a single zero-day exploit to a vulnerability denoted by $\langle\textrm{Ser}3,1,2\rangle$. This can be successfully exploited by an intruder having privilege \emph{user}(\emph{1}) to obtain access to the application server. Thereafter, the intruder can utilize the privilege \emph{user}(\emph{2}) of the application server to reach the goal privilege \emph{root}(\emph{2}).
+Let there be two possible exploits to the vulnerabilities in the first firewall denoted by $\langle\textrm{Ser}1,0,1\rangle$ and $\langle\textrm{Ser}2,0,1\rangle$. The first one is assumed to be a zero day exploit and the second one is considered as a known exploitation. A zero day exploit to a vulnerability is one which may not be publicly known but identified by an intruder. In order to exploit either of the vulnerabilities, the intruder needs the privilege \emph{user}(\emph{0}) (which denotes him being present) and is required to be connected to the historian server through $\langle$\emph{0},\emph{1}$\rangle$. Additionally, the vulnerabilities require the services \emph{Ser1(1)} and \emph{Ser2(1)} respectively to be available for them to be exploited. Once the vulnerability is successfully exploited, the intruder gains the user privilege \emph{user}(\emph{1}) of the historian server. This output of previously occurred exploit can be used as a precondition of the successive exploits. In the second firewall, we consider a single zero-day exploit to a vulnerability denoted by $\langle\textrm{Ser}3,1,2\rangle$. This can be successfully exploited by an intruder having privilege \emph{user}(\emph{1}) to obtain access to the application server.
 
 \subsection{Modeling Bayesian Attack Tree}
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{0.48\textwidth}
-	\centering
-	\includegraphics[width=\textwidth]{fig-example.png}
-	\caption{}\label{sfig-example}
-	\end{subfigure}
-	\begin{subfigure}{0.25\textwidth}
-	\centering
-	\includegraphics[width=\textwidth]{fig-attacktree.png}
-	\caption{}\label{sfig-attacktree}
-	\end{subfigure}
-	\begin{subfigure}{0.22\textwidth}
-	\centering
-	\includegraphics[width=\textwidth]{fig-simpleattacktree.png}
-	\caption{}
-	\label{sfig:simpleattacktree}
-    \end{subfigure}
+	\includegraphics[width=0.48\textwidth]{fig-simpleattacktree.png}
 	\caption{Cyber intrusion scenario in control center server.}
 	\label{fig:example}
 \end{figure}
