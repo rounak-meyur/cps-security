@@ -10,6 +10,7 @@ intrusion. A well planned malicious attack on the SCADA system can not only comp
 Substation LAN Model A | Substation LAN Model B 
 :---: | :---: 
 ![png](figs/A-model.png) | ![png](figs/B-model.png)
+
 Substation LAN Model C | Control Center SCADA Model 
 :---: | :---: 
 ![png](figs/C-model.png) | ![png](figs/CC-model.png)
@@ -18,6 +19,7 @@ Substation LAN Model C | Control Center SCADA Model
 Substation LAN Model A | Substation LAN Model B 
 :---: | :---: 
 ![png](figs/fig-resultA.png) | ![png](figs/fig-resultB.png)
+
 Substation LAN Model C | Control Center SCADA Model 
 :---: | :---: 
 ![png](figs/fig-resultC.png) | ![png](figs/fig-resultCC.png)
@@ -30,7 +32,7 @@ Substation LAN Models | Substation LAN Models and SCADA
 ## Physical Impact of an Attack
 IEEE 39 bus system | Impact of attack on different IED sets 
 :---: | :---: 
-![png](figs/fig-ieee39.png) | ![png](figs/fig-sub2.png)
+![png](figs/fig-ieee39.png) | ![png](figs/fig-sub2.png) ![png](figs/fig-key-sub2.png)
 
 ## Risk Assessment
 Attack on Substation LAN Models | Attack on Control Center SCADA 
