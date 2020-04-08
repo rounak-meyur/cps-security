@@ -6,8 +6,11 @@ intrusion. A well planned malicious attack on the SCADA system can not only comp
 ## Simple Bayesian Attack Tree Model
 An attack graph consists of two types of nodes: exploit to vulnerabilities and conditions required for exploiting. The preconditions needed to exploit a vulnerability are assumed to be either initial conditions of the attack or resulting
 output of some previously occurred exploit. In this case, three preconditions are considered to exploit a vulnerability: (i)service, (ii)connection and (iii)privilege required to access the vulnerability from previous exploit.
+
 For example, a cyber intrusion scenario is considered for a control center SCADA system, where an adversary aims to gain unauthorized access to control assets in the power system. The cyber intruder has to access the application server for this purpose which is dedicated to send control commands to open/close circuit breakers in the power system. In order to do so, the adversary needs to gain access of the historian server through a firewall and thereafter reach the application server through a different firewall.
 ![png](figs/fig-simpleattacktree.png)
+
+Let there be two possible exploits to the vulnerabilities in the first firewall denoted by <Ser1,0,1> and <Ser2,0,1>. The first one is assumed to be a zero day exploit and the second one is considered as a known exploitation. A zero day exploit to a vulnerability is one which may not be publicly known but identified by an intruder. In order to exploit either of the vulnerabilities, the intruder needs the privilege *user*(0) (which denotes him being present) and is required to be connected to the historian server through <0,1>. Additionally, the vulnerabilities require the services *Ser1*(1) and *Ser2*(1) respectively to be available for them to be exploited. Once the vulnerability is successfully exploited, the intruder gains the user privilege *user*(1) of the historian server. This output of previously occurred exploit can be used as a precondition of the successive exploits. In the second firewall, we consider a single zero-day exploit to a vulnerability denoted by <Ser3,1,2>. This can be successfully exploited by an intruder having privilege *user*(1) to obtain access to the application server.
 
 ## Bayesian Attack Tree Models of LAN/SCADA Networks
 Substation LAN Model A | Substation LAN Model B 
